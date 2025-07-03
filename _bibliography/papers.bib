@@ -1,115 +1,112 @@
----
----
+@string{PROC_EGSR      = "Proc. Eurographics Symposium on Rendering"}
+@string{CGF_EGSR08     = "Computer Graphics Forum (Proc. Eurographics Symposium on Rendering)"}
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+@inproceedings{Schuessler:2025:Selective,
+  title = {Selective Caching in Procedural Texture Graphs for Path Tracing},
+  author = {Schüßler, Vincent and Hanika, Johannes and Sauvage, Basile and Dischler, Jean-Michel and Dachsbacher, Carsten},
+  year = 2025,
+  booktitle = PROC_EGSR,
+  doi = {10.2312/sr.20251176},
+  month = jun,
+  abstract = {Procedural texturing is crucial for adding details in large-scale rendering. Typically, procedural textures are represented as computational graphs that artists can edit. However, as scene and graph complexity grow, evaluating these graphs becomes increasingly expensive for the rendering system. Performance is greatly affected by the evaluation strategy: Precomputing textures into high resolution maps is straightforward but can be inefficient, while shade-on-hit architectures and tile-based caches improve efficiency by evaluating only necessary data. However, the ideal choice of strategy depends on the application context. We present a new method to dynamically select which texture graph nodes to cache within a rendering system that supports filtered texture graph evaluation and tile-based caching. Our method allows us to construct an optimized evaluation strategy for each scene. Cache-friendly nodes are identified using data-driven predictions based on statistics of requested texture footprints, gathered during a profiling phase. We develop a statistical model that fits profiling data and predicts how caching specific nodes affects evaluation efficiency and storage demands. Our approach can be directly integrated into a rendering system or used to analyze renderer data, helping practitioners to optimize performance in their workflows.},
+  bibtex_show = {true},
+  code = {https://doi.org/10.5281/zenodo.15585724},
+  pdf = {https://doi.org/10.2312/sr.20251176},
+  preview={texcache.png},
   selected={true},
-  inspirehep_id = {3255}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{Lelyakin:2025:Sampling,
+  title = {Sampling of Anisotropic Spatial Gaussians for Path Guiding},
+  author = {Lelyakin, Sergey and Schüßler, Vincent and Dachsbacher, Carsten},
+  year = 2025,
+  month = may,
+  doi = {10.2312/egp.20251017},
+  booktitle = {Eurographics - Posters},
+  preview={anisogauss.png},
+  bibtex_show = {true},
+  abstract = {
+  Directional models in path guiding struggle with representing parallax effects or anisotropic features. Our model instead describes the spatial distribution of a target vertex using a 3D Gaussian mixture model. While this dispenses with the need for reprojection and allows to represent anisotropic features easily, its directional probability density is not readily available, since it involves a marginal integral. In this work, we derive an expression for the PDF of our model in solid angle measure that is practical to evaluate. We demonstrate how our model can improve guiding accuracy in various scenes.
+  },
+  pdf = {https://doi.org/10.2312/egp.20251017},
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@article{Werner:2024:Restir,
+  title = {ReSTIR Subsurface Scattering for Real-Time Path Tracing},
+  author = {Werner, Mirco and Schüßler, Vincent and Dachsbacher, Carsten},
+  year = 2024,
+  month = aug,
+  journal = {Proc. ACM CGIT (Proc. High Performance Graphics)},
+  doi = {10.1145/3675372},
+  preview={restirsss.png},
+  bibtex_show = {true},
+  abstract = {
+  Subsurface scattering is an important visual cue and in real-time rendering it is often approximated using screen-space algorithms. Path tracing with the diffusion approximation can easily overcome the limitations of these algorithms, but increases image noise. We improve its efficiency by applying reservoir-based spatiotemporal importance resampling (ReSTIR) to subsurface light transport paths. For this, we adopt BSSRDF importance sampling for generating candidates. Further, spatiotemporal reuse requires shifting paths between domains. We observe that different image regions benefit most from either reconnecting through the translucent object (reconnection shift), or one vertex later (delayed reconnection shift). We first introduce a local subsurface scattering specific criterion for a hybrid shift that deterministically selects one of the two shifts for a path. Due to the locality, it cannot always choose the most efficient shift, e.g. near shadow boundaries. Therefore, we additionally propose a novel sequential shift to combine multiple shift mappings: We execute subsequent resampling passes, each one using a different shift, which does not require to deterministically choose a shift for a path. Instead, resampling can pick the most successful shift implicitly. Our method achieves realtime performance and significantly reduces noise and denoising artifacts in regions with visible subsurface scattering compared to standard path tracing with equal render time.
+  },
+  pdf = {https://doi.org/10.1145/3675372},
+  code = {https://github.com/MircoWerner/ReSTIR-SSS},
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@article{Schuessler:2024:Bridge,
+  title = {Bridge Sampling for Connections via Multiple Scattering Events},
+  author = {Schüßler, Vincent and Hanika, Johannes and Dachsbacher, Carsten},
+  year = 2024,
+  month = jul,
+  journal = CGF_EGSR08,
+  doi = {10.1111/cgf.15160},
+  selected={true},
+  bibtex_show = {true},
+  preview={bridges.png},
+  abstract = {
+Explicit sampling of and connecting to light sources is often essential for reducing variance in Monte Carlo rendering. In dense, forward-scattering participating media, its benefit declines, as significant transport happens over longer multiple-scattering paths around the straight connection to the light. Sampling these paths is challenging, as their contribution is shaped by the product of reciprocal squared distance terms and the phase functions. Previous work demonstrates that sampling several of these terms jointly is crucial. However, these methods are tied to low-order scattering or struggle with highly-peaked phase functions.<br>
+We present a method for sampling a bridge: a subpath of arbitrary vertex count connecting two vertices. Its probability density is proportional to all phase functions at inner vertices and reciprocal squared distance terms. To achieve this, we importance sample the phase functions first, and subsequently all distances at once. For the latter, we sample an independent, preliminary distance for each edge of the bridge, and afterwards scale the bridge such that it matches the connection distance. The scale factor can be marginalized out analytically to obtain the probability density of the bridge. This approach leads to a simple algorithm and can construct bridges of any vertex count. For the case of one or two inserted vertices, we also show an alternative without scaling or marginalization.<br>
+For practical path sampling, we present a method to sample the number of bridge vertices whose distribution depends on the connection distance, the phase function, and the collision coefficient. While our importance sampling treats media as homogeneous we demonstrate its effectiveness on heterogeneous media.
+  },
+  pdf = {https://doi.org/10.1111/cgf.15160},
+  code ={https://doi.org/10.5281/zenodo.12068529},
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@article{Schuessler:2023:Markov,
+  title = {Markov Chain Mixture Models for Real-Time Direct Illumination},
+  author = {Dittebrandt, Addis and Schüßler, Vincent and Hanika, Johannes and Herholz, Sebastian and Dachsbacher, Carsten},
+  year = 2023,
+  month = jul,
+  doi = {10.1111/cgf.14881},
+  journal = CGF_EGSR08,
+  preview={mcmm.png},
+  bibtex_show = {true},
+  pdf = {https://doi.org/10.1111/cgf.14582},
+  abstract = {We present a novel technique to efficiently render complex direct illumination in real-time. It is based on a spatio-temporal randomized mixture model of von Mises-Fisher (vMF) distributions in screen space. For every pixel we determine the vMF distribution to sample from using a Markov chain process which is targeted to capture important features of the integrand. By this we avoid the storage overhead of finite-component deterministic mixture models, for which, in addition, determining the optimal component count is challenging. We use stochastic multiple importance sampling (SMIS) to be independent of the equilibrium distribution of our Markov chain process, since it cancels out in the estimator. Further, we use the same sample to advance the Markov chain and to construct the SMIS estimator and local Markov chain state permutations avoid the resulting bias due to dependent sampling. As a consequence we require one ray per sample and pixel only. We evaluate our technique using implementations in a research renderer as well as a classic game engine with highly dynamic content. Our results show that it is efficient and quickly readapts to dynamic conditions. We compare to spatio-temporal resampling (ReSTIR), which can suffer from correlation artifacts due to its non-adapting candidate distributions that can deviate strongly from the integrand. While we focus on direct illumination, our approach is more widely applicable and we exemplarily show the rendering of caustics.},
+  code ={https://github.com/theascone/mcmm-falcor},
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{Schuessler:2022:Path,
+  title = {Path Guiding with Vertex Triplet Distributions},
+  author = {Schüßler, Vincent and Hanika, Johannes and Jung, Alisa and Dachsbacher, Carsten},
+  doi = {10.1111/cgf.14582},
+  year = 2022,
+  month = jul,
+  journal = CGF_EGSR08,
+  selected={true},
+  preview={triplets.png},
+  bibtex_show = {true},
+  pdf = {https://doi.org/10.1111/cgf.14582},
+  abstract = {Good importance sampling strategies are decisive for the quality and robustness of photorealistic image synthesis with Monte Carlo integration. Path guiding approaches use transport paths sampled by an existing base sampler to build and refine a guiding distribution. This distribution then guides subsequent paths in regions that are otherwise hard to sample. We observe that all terms in the measurement contribution function sampled during path construction depend on at most three consecutive path vertices. We thus propose to build a 9D guiding distribution over vertex triplets that adapts to the full measurement contribution with a 9D Gaussian mixture model (GMM). For incremental path sampling, we query the model for the last two vertices of a path prefix, resulting in a 3D conditional distribution with which we sample the next vertex along the path. To make this approach scalable, we partition the scene with an octree and learn a local GMM for each leaf separately. In a learning phase, we sample paths using the current guiding distribution and collect triplets of path vertices. We resample these triplets online and keep only a fixed-size subset in reservoirs. After each progression, we obtain new GMMs from triplet samples by an initial hard clustering followed by expectation maximization. Since we model 3D vertex positions, our guiding distribution naturally extends to participating media. In addition, the symmetry in the GMM allows us to query it for paths constructed by a light tracer. Therefore our method can guide both a path tracer and light tracer from a jointly learned guiding distribution.},
+  code = {https://doi.org/10.5281/zenodo.6669884},
+}
+
+@article{Schuessler:2017:Microfacet,
+  title = {Microfacet-based normal mapping for robust Monte Carlo path tracing},
+  author = {Schüßler, Vincent and Heitz, Eric and Hanika, Johannes and Dachsbacher, Carsten},
+  doi = {10.1145/3130800.3130806},
+  journal = {Transactions on Graphics (Proc. SIGGRAPH Asia)},
+  year = 2017,
+  month = nov,
+  selected={true},
+  preview={microfacet.png},
+  bibtex_show = {true},
+  abstract = {Normal mapping enhances the amount of visual detail of surfaces by using shading normals that deviate from the geometric normal. However, the resulting surface model is geometrically impossible and normal mapping is thus often considered a fundamentally flawed approach with unavoidable problems for Monte Carlo path tracing, such as asymmetry, back-facing normals, and energy loss arising from this incoherence. These problems are usually sidestepped in real-time renderers, but they cannot be fixed robustly in a path tracer: normal mapping breaks either the appearance (black fringes, energy loss) or the integrator (different forward and backward light transport); in practice, workarounds and tweaked normal maps are often required to hide artifacts.<br>
+We present microfacet-based normal mapping, an alternative way of faking geometric details without corrupting the robustness of Monte Carlo path tracing. It takes the same input data as classic normal mapping and works with any input BRDF. Our idea is to construct a geometrically valid microfacet surface made of two facets per shading point: the one given by the normal map at the shading point and an additional facet that compensates for it such that the average normal of the microsurface equals the geometric normal. We derive the resulting microfacet BRDF and show that it mimics geometric detail in a plausible way, although it does not replicate the appearance of classic normal mapping. However, our microfacet-based normal mapping model is well-defined, symmetric, and energy conserving, and thus yields identical results with any path tracing algorithm (forward, backward, or bidirectional).},
+  code = {https://jo.dreggn.org/home/2017_normalmap_code.tar.xz},
+  pdf = {https://cg.ivd.kit.edu/publications/2017/normalmaps/normalmap.pdf},
 }

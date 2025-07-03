@@ -1,34 +1,35 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"hanika":
+  - firstname: ["Johannes"]
+    url: https://jo.dreggn.org/home/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"heitz":
+  - firstname: ["Eric"]
+    url: https://eheitzresearch.wordpress.com
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"jung":
+  - firstname: ["Alisa"]
+    url: https://alisajung.github.io
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"herholz":
+  - firstname: ["Sebastian"]
+    url: https://www.intel.com/content/www/us/en/developer/articles/community/rendering-researchers-sebastian-herholz.html
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"dittebrandt":
+  - firstname: ["Addis"]
+    url: https://cg.ivd.kit.edu/dittebrandt/staff_index.php
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"dachsbacher":
+  - firstname: ["Carsten"]
+    url: https://cg.ivd.kit.edu/dachsbacher/staff_index.php
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"werner":
+  - firstname: ["Mirco"]
+    url: https://github.com/MircoWerner
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"sauvage":
+  - firstname: ["Basile"]
+    url: https://igg.icube.unistra.fr/en/index.php/Basile_Sauvage
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"dischler":
+  - firstname: ["Jean-Michel"]
+    url: https://dpt-info.u-strasbg.fr/~dischler/
