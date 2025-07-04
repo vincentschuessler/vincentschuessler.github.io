@@ -45,6 +45,10 @@
   },
   pdf = {https://doi.org/10.1145/3675372},
   code = {https://github.com/MircoWerner/ReSTIR-SSS},
+  volume = {7},
+  number = {3},
+  articleno = {36},
+  numpages = {19},
 }
 
 @article{Schuessler:2024:Bridge,
@@ -64,6 +68,8 @@ For practical path sampling, we present a method to sample the number of bridge 
   },
   pdf = {https://doi.org/10.1111/cgf.15160},
   code ={https://doi.org/10.5281/zenodo.12068529},
+  volume = 43,
+  number = 4,
 }
 
 @article{Schuessler:2023:Markov,
@@ -78,6 +84,8 @@ For practical path sampling, we present a method to sample the number of bridge 
   pdf = {https://doi.org/10.1111/cgf.14582},
   abstract = {We present a novel technique to efficiently render complex direct illumination in real-time. It is based on a spatio-temporal randomized mixture model of von Mises-Fisher (vMF) distributions in screen space. For every pixel we determine the vMF distribution to sample from using a Markov chain process which is targeted to capture important features of the integrand. By this we avoid the storage overhead of finite-component deterministic mixture models, for which, in addition, determining the optimal component count is challenging. We use stochastic multiple importance sampling (SMIS) to be independent of the equilibrium distribution of our Markov chain process, since it cancels out in the estimator. Further, we use the same sample to advance the Markov chain and to construct the SMIS estimator and local Markov chain state permutations avoid the resulting bias due to dependent sampling. As a consequence we require one ray per sample and pixel only. We evaluate our technique using implementations in a research renderer as well as a classic game engine with highly dynamic content. Our results show that it is efficient and quickly readapts to dynamic conditions. We compare to spatio-temporal resampling (ReSTIR), which can suffer from correlation artifacts due to its non-adapting candidate distributions that can deviate strongly from the integrand. While we focus on direct illumination, our approach is more widely applicable and we exemplarily show the rendering of caustics.},
   code ={https://github.com/theascone/mcmm-falcor},
+  volume = 42,
+  number = 4,
 }
 
 @article{Schuessler:2022:Path,
@@ -93,6 +101,8 @@ For practical path sampling, we present a method to sample the number of bridge 
   pdf = {https://doi.org/10.1111/cgf.14582},
   abstract = {Good importance sampling strategies are decisive for the quality and robustness of photorealistic image synthesis with Monte Carlo integration. Path guiding approaches use transport paths sampled by an existing base sampler to build and refine a guiding distribution. This distribution then guides subsequent paths in regions that are otherwise hard to sample. We observe that all terms in the measurement contribution function sampled during path construction depend on at most three consecutive path vertices. We thus propose to build a 9D guiding distribution over vertex triplets that adapts to the full measurement contribution with a 9D Gaussian mixture model (GMM). For incremental path sampling, we query the model for the last two vertices of a path prefix, resulting in a 3D conditional distribution with which we sample the next vertex along the path. To make this approach scalable, we partition the scene with an octree and learn a local GMM for each leaf separately. In a learning phase, we sample paths using the current guiding distribution and collect triplets of path vertices. We resample these triplets online and keep only a fixed-size subset in reservoirs. After each progression, we obtain new GMMs from triplet samples by an initial hard clustering followed by expectation maximization. Since we model 3D vertex positions, our guiding distribution naturally extends to participating media. In addition, the symmetry in the GMM allows us to query it for paths constructed by a light tracer. Therefore our method can guide both a path tracer and light tracer from a jointly learned guiding distribution.},
   code = {https://doi.org/10.5281/zenodo.6669884},
+  volume = 41,
+  number = 4,
 }
 
 @article{Schuessler:2017:Microfacet,
@@ -109,4 +119,7 @@ For practical path sampling, we present a method to sample the number of bridge 
 We present microfacet-based normal mapping, an alternative way of faking geometric details without corrupting the robustness of Monte Carlo path tracing. It takes the same input data as classic normal mapping and works with any input BRDF. Our idea is to construct a geometrically valid microfacet surface made of two facets per shading point: the one given by the normal map at the shading point and an additional facet that compensates for it such that the average normal of the microsurface equals the geometric normal. We derive the resulting microfacet BRDF and show that it mimics geometric detail in a plausible way, although it does not replicate the appearance of classic normal mapping. However, our microfacet-based normal mapping model is well-defined, symmetric, and energy conserving, and thus yields identical results with any path tracing algorithm (forward, backward, or bidirectional).},
   code = {https://jo.dreggn.org/home/2017_normalmap_code.tar.xz},
   pdf = {https://cg.ivd.kit.edu/publications/2017/normalmaps/normalmap.pdf},
+  volume = 36,
+  number = 6,
+  pages = {205:1--205:12},
 }
