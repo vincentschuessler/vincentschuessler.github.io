@@ -27,11 +27,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a doctoral researcher in computer graphics at the [Karlsruhe Institute of Technology (KIT)](//cg.ivd.kit.edu/english/), currently completing my PhD under the supervision of Prof. Carsten Dachsbacher. 
-My research focuses on Monte Carlo light transport simulation for physically-based rendering, with emphasis on path guiding and volume rendering techniques.
-I'm also interested in appearance modeling and filtering, as well as real-time path tracing.
-Beyond research, I enjoy Lindy Hop dancing, bouldering, and occasionally obsessing a little over coffee.
+I work in physically based rendering, with a focus on Monte Carlo light transport simulation.
+During my PhD with the [computer graphics group at KIT](//cg.ivd.kit.edu/english/), I developed sampling techniques that make it more practical to render realistic images of scenes with challenging light transport, such as glossy and volumetric scattering.
+I had the opportunity to implement some of this research in a production renderer at [Wētā FX](//www.wetafx.co.nz).
+Beyond that, I've also explored topics in appearance modeling and filtering, as well as real-time path tracing, and am curious about related areas within computer graphics and adjacent fields.
+Outside of research, I enjoy Lindy Hop dancing, bouldering, and experimenting in the kitchen. 
 
-As I approach the final stages of my PhD, I am seeking new opportunities to apply my expertise in computer graphics and rendering. 
-
-If you're interested in my work or just want to connect, feel free to [reach out](mailto:hi@vincentschuessler.com).
+I recently defended my doctoral thesis and am now looking for new opportunities to apply my expertise and continue tackling interesting problems.
+If you're interested in my work or would simply like to connect, [I'd be happy to hear from you](mailto:hi@example.com).
