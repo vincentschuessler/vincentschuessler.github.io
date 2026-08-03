@@ -34,4 +34,4 @@ Beyond that, I've also explored topics in appearance modeling and filtering, as 
 Outside of research, I enjoy Lindy Hop dancing, bouldering, and experimenting in the kitchen. 
 
 I recently defended my doctoral thesis and am now looking for new opportunities to apply my expertise and continue tackling interesting problems.
-If you're interested in my work or would simply like to connect, [I'd be happy to hear from you](mailto:hi@example.com).
+If you're interested in my work or would simply like to connect, [I'd be happy to hear from you](mailto:hi@vincentschuessler.com).
